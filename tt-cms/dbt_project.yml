@@ -36,3 +36,8 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: table
+
+seeds:
+  # many cms files have spaces in field names
+  +quote_columns: true
+
