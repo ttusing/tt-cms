@@ -1,6 +1,9 @@
-### Hello world
+### CMS Data Load and Integrity Tests
+This project contains a basic DBT model for loading and exploring CMS data. It includes publically available sample data from CMS, a DBT install to load the data into a database with configuration for datatypes and metadata, and validations to ensure that the data is valid.
 
-This project contains a basic DBT model for loading and exploring CMS data.
+Data tests check that the data types are correct and in conventions that match the namespace conventions, for instance:
+
+- NPIs are 10 digit numeric and pass the NPI digit check algorithm: https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/NationalProvIdentStand/Downloads/NPIcheckdigit.pdf
 
 Currently, this CMS data file is loaded:
 
